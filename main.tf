@@ -7,7 +7,7 @@ resource "aws_vpc" "myvpc" {
     enable_dns_hostnames = true
     enable_dns_support = true
     tags = {
-      "name" = "Myvpc"
+      "Name" = "Myvpc"
     }
     
 }
@@ -16,7 +16,7 @@ resource "aws_instance" "myec2" {
     instance_type = "t2.micro"
     availability_zone = "us-east-1a"
     tags = {
-      "name" = "myec2"
+      "Name" = "myec2"
     }
 
   
